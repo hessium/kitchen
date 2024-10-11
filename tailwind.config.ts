@@ -1,8 +1,9 @@
 import type { Config } from 'tailwindcss';
-import { spacing } from 'tailwindcss/defaultTheme';
+import { opacity, spacing } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   content: [
+    './src/**/*.{js,jsx,ts,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -52,11 +53,36 @@ const config: Config = {
     extend: {
       colors: {
         background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        primary: {
-          50: 'var(--primary-50)',
-          DEFAULT: 'var(--primary)',
+        content1: 'hsl(var(--content1))',
+
+        content2: 'hsl(var(--content2))',
+        content3: 'hsl(var(--content3))',
+        content4: 'hsl(var(--content4))',
+        default: {
+          50: 'hsl(var(--default-50))',
+          100: 'hsl(var(--default-100))',
+          200: 'hsl(var(--default-200))',
+          300: 'hsl(var(--default-300))',
+          400: 'hsl(var(--default-400))',
+          500: 'hsl(var(--default-500))',
+          600: 'hsl(var(--default-600))',
+          700: 'hsl(var(--default-700))',
+          800: 'hsl(var(--default-800))',
+          900: 'hsl(var(--default-900))',
+          DEFAULT: 'hsl(var(--default))',
+          foreground: 'hsl(var(--default-foreground))',
         },
+
+        foreground: 'var(--foreground)',
+
+        primary: {
+          50: 'hsl(var(--primary-50))',
+          DEFAULT: 'hsl(var(--primary))',
+        },
+      },
+      opacity: {
+        ...opacity,
+        disabled: '.6',
       },
       spacing: {
         ...spacing,

@@ -8,14 +8,46 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --primary: #35B8BE;
-  --primary-50: #F5FBFC;
+  --primary: 183 56% 48%;
+  --primary-50: 189, 54%, 97%;
+
+  --content1: 0, 7%, 97%;
+  --content2: 240, 5%, 96%;
+  --content3: 240, 6%, 90%;
+  --content4: 240, 5%, 84%;
+
+  --default-50: 0 0% 98.04%;
+  --default-100: 240 4.76% 95.88%;
+  --default-200: 240 5.88% 90%;
+  --default-300: 240 4.88% 83.92%;
+  --default-400: 240 5.03% 64.9%;
+  --default-500: 240 3.83% 46.08%;
+  --default-600: 240 5.2% 33.92%;
+  --default-700: 240 5.26% 26.08%;
+  --default-800: 240 3.7% 15.88%;
+  --default-900: 240 5.88% 10%;
+  --default-foreground: 0 0% 0%;
+  --default: 240 4.88% 83.92%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+
+    --default-50: 240 5.88% 10%;
+    --default-100: 240 3.7% 15.88%;
+    --default-200: 240 5.26% 26.08%;
+    --default-300: 240 5.2% 33.92%;
+    --default-400: 240 3.83% 46.08%;
+    --default-500: 240 5.03% 64.9%;
+    --default-600: 240 4.88% 83.92%;
+    --default-700: 240 5.88% 90%;
+    --default-800: 240 4.76% 95.88%;
+    --default-900: 0 0% 98.04%;
+    --default-foreground: 0 0% 100%;
+    --default: 240 5.26% 26.08%;
   }
 }
 
@@ -39,7 +71,6 @@ body {
 main {
   flex: 1;
 }
-
 
 @layer utilities {
   .text-balance {

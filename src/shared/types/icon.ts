@@ -13,10 +13,10 @@ export const SPRITES_META: {
   };
 } = {
   common: {
-    filePath: 'common.6db0b309.svg',
+    filePath: 'common.85d298c7.svg',
     items: {
       cart: {
-        viewBox: '0 0 25 17',
+        viewBox: '0 0 21 21',
       },
       test: {
         viewBox: '0 0 512 512',

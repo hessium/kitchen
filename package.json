@@ -16,13 +16,16 @@
     "test:commit": "commitlint -e"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "clsx": "^2.1.1",
     "effector": "^23.2.3",
     "effector-react": "^23.2.1",
     "next": "14.2.15",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "tailwind-merge": "^2.5.3"
+    "tailwind-merge": "^2.5.3",
+    "tailwind-variants": "^0.2.1",
+    "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
     "@neodx/svg": "0.7.0",

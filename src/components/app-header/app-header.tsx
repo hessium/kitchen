@@ -19,6 +19,7 @@ export const AppHeader = () => (
 
     <div className='flex-center gap-6'>
       <HeaderNavigation />
+
       <HeaderCart />
     </div>
   </header>
