@@ -8,6 +8,7 @@ type LayoutMeta = AppMeta;
 export const LayoutMeta = ({
   title = APP_META.title,
   description = APP_META.description,
+  //TODO добавить картинку как defaultProps и убрать проверку в JSX
   image,
   canonical,
 }: LayoutMeta) => (
