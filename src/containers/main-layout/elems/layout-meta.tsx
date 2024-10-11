@@ -1,4 +1,4 @@
-import { Head } from 'next/document';
+import Head from 'next/head';
 
 import { APP_META } from '@/shared/constants/meta';
 
