@@ -1,3 +1,5 @@
 export const AppHeader = () => (
-  <header className='h-header flex-center bg-zinc-600'>Header</header>
+  <header className='h-header span:font-bold flex-center bg-zinc-600'>
+    <span>HeadSpan</span>
+  </header>
 );
