@@ -4,7 +4,7 @@ import { LINKS } from '@/shared/constants/links';
 import { Icon } from '@/shared/ui/icon/icon';
 
 export const AppHeader = () => (
-  <header className='h-header justify-between gap-6	 bg-zinc-600 flex-center span:font-bold'>
+  <header className='h-header flex-center span:font-bold justify-between gap-6 bg-zinc-600'>
     <Icon name='common/test' />
 
     <div className='flex-center'>
