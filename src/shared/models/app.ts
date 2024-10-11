@@ -4,4 +4,4 @@ export type AppStore = {
   ready: boolean;
 };
 
-export const $app = createStore<AppStore>(false);
+export const $app = createStore<AppStore>({ ready: false });

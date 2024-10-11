@@ -2,6 +2,7 @@ import type { PropsWithChildren } from 'react';
 
 import type { AppMeta } from '@/shared/types/globals';
 
+import { AppFooter } from '@/components/app-footer/app-footer';
 import { AppHeader } from '@/components/app-header/app-header';
 import { LayoutMeta } from '@/containers/main-layout/elems/layout-meta';
 
@@ -17,7 +18,8 @@ export const MainLayout = ({ children, meta }: MainLayoutProps) => {
       <LayoutMeta {...meta} />
 
       <AppHeader />
-      {children}
+      <main>{children}</main>
+      <AppFooter />
     </>
   );
 };

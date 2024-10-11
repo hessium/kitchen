@@ -7,7 +7,7 @@ import { MainLayout } from '@/containers/main-layout/main-layout';
 export default function Home() {
   return (
     <MainLayout meta={{ title: 'Home' }}>
-      <Link href={LINKS.about}>К About</Link>
+      <Link href={LINKS[0].path}>{LINKS[0].name}</Link>
     </MainLayout>
   );
 }

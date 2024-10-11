@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ts-check": "yarn tsc --noEmit",
+    "test:all": "yarn ts-check && yarn test:eslint && yarn test:stylelint",
+    "test:all:fix": "yarn ts-check && yarn test:eslint:fix && yarn test:prettier && yarn test:stylelint:fix",
+    "test:eslint": "eslint '**/*.{ts,tsx}'",
+    "test:eslint:fix": "yarn test:eslint --fix",
+    "test:prettier": "prettier --write '**/*.{ts,tsx,json}'",
+    "test:commit": "commitlint -e"
   },
   "dependencies": {
     "clsx": "^2.1.1",
