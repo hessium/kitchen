@@ -53,6 +53,10 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        primary: {
+          50: 'var(--primary-50)',
+          DEFAULT: 'var(--primary)',
+        },
       },
       spacing: {
         ...spacing,

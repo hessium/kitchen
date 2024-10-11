@@ -1,24 +1,25 @@
 import Link from 'next/link';
 
-import { LINKS } from '@/shared/constants/links';
 import { Icon } from '@/shared/ui/icon/icon';
 
-export const AppHeader = () => (
-  <header className='h-header flex-center span:font-bold justify-between gap-6 bg-zinc-600'>
-    <Icon name='common/test' />
+import { HeaderCart } from '@/components/app-header/elems/header-cart';
+import { HeaderNavigation } from '@/components/app-header/elems/header-navigation';
 
-    <div className='flex-center'>
-      <nav>
-        {LINKS.map((link) => (
-          <Link
-            key={link.path}
-            href={link.path}
-          >
-            {link.name}
-          </Link>
-        ))}
-      </nav>
-      <button>Корзина</button>
+export const AppHeader = () => (
+  <header className='flex w-full items-center justify-between  gap-6 bg-zinc-600 px-5 py-5'>
+    <Link
+      className='flex-center size-10'
+      href='/'
+    >
+      <Icon
+        className='fill-primary size-full hover:fill-cyan-900'
+        name='common/test'
+      />
+    </Link>
+
+    <div className='flex-center gap-6'>
+      <HeaderNavigation />
+      <HeaderCart />
     </div>
   </header>
 );

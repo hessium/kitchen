@@ -1,5 +1,5 @@
 export interface SpritesMap {
-  common: 'test';
+  common: 'cart' | 'test';
 }
 export const SPRITES_META: {
   [Key in keyof SpritesMap]: {
@@ -13,8 +13,11 @@ export const SPRITES_META: {
   };
 } = {
   common: {
-    filePath: 'common.defe98a9.svg',
+    filePath: 'common.6db0b309.svg',
     items: {
+      cart: {
+        viewBox: '0 0 25 17',
+      },
       test: {
         viewBox: '0 0 512 512',
       },
