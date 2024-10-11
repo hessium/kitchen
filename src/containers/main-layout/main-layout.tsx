@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
 import type { PropsWithChildren } from 'react';
+
+import type { AppMeta } from '@/shared/types/globals';
 
 import { AppHeader } from '@/components/app-header/app-header';
 import { LayoutMeta } from '@/containers/main-layout/elems/layout-meta';
 
 export interface MainLayoutProps extends PropsWithChildren {
-  meta?: Metadata;
+  meta?: AppMeta;
 }
 
 export const MainLayout = ({ children, meta }: MainLayoutProps) => {

@@ -1,14 +1,15 @@
 import Head from 'next/head';
 
 import { APP_META } from '@/shared/constants/meta';
+import type { AppMeta } from '@/shared/types/globals';
 
-import type { MainLayoutProps } from '@/containers/main-layout/main-layout';
-
-type LayoutMeta = MainLayoutProps['meta'];
+type LayoutMeta = AppMeta;
 
 export const LayoutMeta = ({
   title = APP_META.title,
   description = APP_META.description,
+  image,
+  canonical,
 }: LayoutMeta) => (
   <Head>
     <title>{title}</title>
@@ -16,6 +17,21 @@ export const LayoutMeta = ({
       content={description}
       name='description'
     />
+
+    {image && (
+      <meta
+        content={image}
+        name='image'
+      />
+    )}
+
+    {canonical && (
+      <link
+        href={canonical}
+        rel='canonical'
+      />
+    )}
+
     {process.env.NEXT_STAND === 'dev' && (
       <meta
         content='noindex, nofollow'
