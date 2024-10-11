@@ -1,6 +1,6 @@
-import type { Metadata } from 'next';
+import type { AppMeta } from '@/shared/types/globals';
 
-export const APP_META: Metadata = {
+export const APP_META: AppMeta = {
   description: 'Кухня',
   title: 'Кухня',
 };

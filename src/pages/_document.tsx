@@ -1,12 +1,12 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
-import { Favicons } from '@/components/favicons/favicons';
+import { BaseMeta } from '@/components/base-meta/base-meta';
 
 export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <Favicons />
+        <BaseMeta />
       </Head>
 
       <body className='antialiased'>
