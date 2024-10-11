@@ -39,5 +39,10 @@ export const LayoutMeta = ({
         name='robots'
       />
     )}
+
+    <meta
+      content='width=device-width, initial-scale=1'
+      name='viewport'
+    />
   </Head>
 );
