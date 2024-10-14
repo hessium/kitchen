@@ -1,5 +1,5 @@
 export const AppFooter = () => (
-  <footer className='h-header flex-center span:font-bold bg-zinc-600'>
+  <footer className='h-header bg-zinc-600 flex-center span:font-bold'>
     <span>Footer</span>
   </footer>
 );

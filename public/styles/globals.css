@@ -30,7 +30,7 @@
   --default: 240 4.88% 83.92%;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -49,21 +49,21 @@
     --default-foreground: 0 0% 100%;
     --default: 240 5.26% 26.08%;
   }
-}
+}*/
 
 html {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Inter, sans-serif;
-  height: 100%;
+  min-height: 100vh;
 }
 
 #__next {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }

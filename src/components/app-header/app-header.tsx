@@ -6,18 +6,18 @@ import { HeaderCart } from '@/components/app-header/elems/header-cart';
 import { HeaderNavigation } from '@/components/app-header/elems/header-navigation';
 
 export const AppHeader = () => (
-  <header className='flex w-full items-center justify-between  gap-6 bg-zinc-600 px-5 py-5'>
+  <header className='flex w-full items-center justify-between  gap-6 px-5 py-5'>
     <Link
-      className='flex-center size-10'
+      className='size-10 flex-center'
       href='/'
     >
       <Icon
-        className='fill-primary size-full hover:fill-cyan-900'
+        className='size-full fill-primary hover:fill-cyan-900'
         name='common/test'
       />
     </Link>
 
-    <div className='flex-center gap-6'>
+    <div className='gap-6 flex-center'>
       <HeaderNavigation />
 
       <HeaderCart />

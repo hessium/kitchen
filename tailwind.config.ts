@@ -53,11 +53,12 @@ const config: Config = {
     extend: {
       colors: {
         background: 'var(--background)',
-        content1: 'hsl(var(--content1))',
 
+        content1: 'hsl(var(--content1))',
         content2: 'hsl(var(--content2))',
         content3: 'hsl(var(--content3))',
         content4: 'hsl(var(--content4))',
+
         default: {
           50: 'hsl(var(--default-50))',
           100: 'hsl(var(--default-100))',
@@ -74,7 +75,6 @@ const config: Config = {
         },
 
         foreground: 'var(--foreground)',
-
         primary: {
           50: 'hsl(var(--primary-50))',
           DEFAULT: 'hsl(var(--primary))',
