@@ -10,6 +10,7 @@
 
   --primary: 183 56% 48%;
   --primary-50: 189, 54%, 97%;
+  --primary-text: 223, 23%, 43%, 1;
 
   --content1: 0, 7%, 97%;
   --content2: 240, 5%, 96%;
@@ -51,7 +52,9 @@
   }
 }*/
 
-html {
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -59,7 +62,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Inter, sans-serif;
-  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 #__next {
@@ -77,3 +81,19 @@ main {
     text-wrap: balance;
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+

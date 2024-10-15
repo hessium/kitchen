@@ -9,7 +9,7 @@ export type ButtonVariant = 'solid' | 'link' | 'light';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean;
-  color?: 'default' | 'primary';
+  color?: 'default' | 'primary' | 'white';
   endContent?: ReactNode;
   isDisabled?: boolean;
   isIconOnly?: boolean;

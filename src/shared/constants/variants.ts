@@ -32,6 +32,11 @@ export const button = tv({
       variant: 'solid',
     },
     {
+      class: 'bg-white hover:bg-slate-50',
+      color: 'white',
+      variant: 'solid',
+    },
+    {
       class: 'bg-transparent hover:bg-default/70',
       color: 'default',
       variant: 'light',

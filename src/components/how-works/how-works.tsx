@@ -25,21 +25,23 @@ export const HowWorks = () => {
 
   return (
     <MainSection>
-      <div className='bg-primary-50 p-4 md:p-10 xl:p-28'>
+      <div className='p-4 md:p-10 xl:p-28'>
         <div className='mx-auto flex max-w-screen-2xl flex-col items-center text-center'>
-          <h2 className='mb-6 text-4xl text-primary'>How it works.</h2>
-          <div className='flex items-center gap-32'>
+          <h2 className='mb-6 text-2xl text-primary md:text-4xl lg:text-5xl'>
+            Browse our menu
+          </h2>
+          <p className='text-primary-text mb-6'>
+            Use our menu to place an order online, or phone our store to place a
+            pickup order. Fast and fresh food.
+          </p>
+          <div className='flex flex-col items-center gap-10 md:flex-row lg:gap-32'>
             {worksList.map((el) => (
               <div
                 key={el.name}
-                className='relative flex w-1/3 flex-col
-                items-center gap-3'
+                className='w relative flex w-80 flex-col items-center
+                gap-3 md:w-1/3'
               >
-                <div
-                  className='before:z-1 relative aspect-[333/267] w-full
-                before:absolute before:inset-y-1/2 before:-right-20 before:block
-                before:h-px before:w-1/5	 before:bg-gray-400'
-                >
+                <div className='item__img before:z-1 relative aspect-[333/267] w-full'>
                   <Image
                     fill
                     alt={el.name}
@@ -47,8 +49,8 @@ export const HowWorks = () => {
                     src={el.image}
                   />
                 </div>
-                <div>{el.name}</div>
-                <p>{el.text}</p>
+                <h3 className='text-xl'>{el.name}</h3>
+                <p className='text-primary-text'>{el.text}</p>
               </div>
             ))}
           </div>

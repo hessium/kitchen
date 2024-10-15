@@ -1,0 +1,24 @@
+.popup {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100dvh;
+    display: flex;
+    z-index: 10;
+    overflow: hidden;
+    transition: width ease .5s;
+}
+.active {
+    width: 100dvw;
+}
+
+.popup__wrap {
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    background-color: white;
+}

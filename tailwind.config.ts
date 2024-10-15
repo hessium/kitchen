@@ -51,6 +51,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        50: '50%',
+      },
       colors: {
         background: 'var(--background)',
 
@@ -78,6 +81,7 @@ const config: Config = {
         primary: {
           50: 'hsl(var(--primary-50))',
           DEFAULT: 'hsl(var(--primary))',
+          text: 'hsl(var(--primary-text))',
         },
       },
       opacity: {
