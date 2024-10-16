@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { NAVIGATION } from '@/shared/constants/navigation';
 
 export const HeaderNavigation = () => (
-  <nav className='gap-6 flex-center'>
+  <nav className='flex-col gap-6 flex-center md:flex-row'>
     {NAVIGATION.map((link) => (
       <Link
         key={link.path}

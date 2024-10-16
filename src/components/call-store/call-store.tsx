@@ -12,7 +12,7 @@ export const CallStore = () => (
           <h1 className='mb-6 text-2xl  md:text-4xl lg:text-5xl'>
             Call our store and takeaway when it suits you best.
           </h1>
-          <p className='text-primary-text mb-8'>
+          <p className='mb-8 text-primary-text'>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500.

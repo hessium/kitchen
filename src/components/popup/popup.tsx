@@ -18,11 +18,12 @@ export const Popup = ({
     onClick={onClose}
   >
     <Button
-      asChild
+      className='absolute right-10 top-4 m-auto	ml-auto p-1'
+      radius='md'
       variant='light'
     >
       <Icon
-        className='absolute right-1 top-5 size-4 fill-primary hover:fill-cyan-900'
+        className='size-8 fill-primary hover:fill-cyan-900'
         name='common/close'
       />
     </Button>

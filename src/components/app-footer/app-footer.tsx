@@ -8,7 +8,7 @@ import { FooterSocials } from '@/components/app-footer/elems/footer-socials';
 
 export const AppFooter = () => (
   <footer className={cn(classes.footer, 'bg-violet-50 p-8 md:p-10 xl:p-28')}>
-    <div className='mx-auto max-w-screen-2xl items-center text-center lg:flex lg:text-left'>
+    <div className='mx-auto max-w-screen-2xl items-center text-center lg:text-left'>
       <div className='flex flex-col-reverse border-b pb-12 md:flex-row'>
         <div className='md:text-left'>
           <Icon
@@ -23,7 +23,7 @@ export const AppFooter = () => (
 
         <FooterNavigation />
       </div>
-      <div className='pt-8 flex-center'>
+      <div className='pt-8 text-left flex-center'>
         <div className='text-sm'>
           Build by{' '}
           <a
