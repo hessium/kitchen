@@ -6,14 +6,14 @@ import { Icon } from '@/shared/ui/icon/icon';
 import { Popup } from '@/components/popup/popup';
 
 export const HeaderCart = () => {
-  const [isOpenPopup, setIsOpenPopup] = useState(false);
+  const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
 
-  const onOpenPopup = () => {
+  const onOpenPopup = (): void => {
     document.body.classList.add('lock-scroll');
     setIsOpenPopup(true);
   };
 
-  const onClosePopup = () => {
+  const onClosePopup = (): void => {
     document.body.classList.remove('lock-scroll');
     setIsOpenPopup(false);
   };
@@ -27,7 +27,10 @@ export const HeaderCart = () => {
         radius='md'
         onClick={onOpenPopup}
       >
-        <Icon name='common/cart' />
+        <Icon
+          className='size-5 fill-white'
+          name='common/cart'
+        />
       </Button>
       <Popup
         isOpen={isOpenPopup}

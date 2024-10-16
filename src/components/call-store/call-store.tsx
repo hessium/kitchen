@@ -1,6 +1,11 @@
 import Image from 'next/image';
 
+import {
+  CONTAINER_IMG_CLS,
+  CONTAINER_TEXT_CLS,
+} from '@/shared/constants/classes';
 import { Button } from '@/shared/ui/button/button';
+import { cn } from '@/shared/utils/cn';
 
 import { MainSection } from '@/containers/main-section/main-section';
 
@@ -8,7 +13,7 @@ export const CallStore = () => (
   <MainSection>
     <div className='p-8 md:p-10 xl:p-28'>
       <div className='mx-auto max-w-screen-2xl items-center text-center lg:flex lg:text-left'>
-        <div className='mb-12 w-full lg:mb-0 lg:mr-12 lg:w-6/12 lg:max-w-xl'>
+        <div className={cn(CONTAINER_TEXT_CLS)}>
           <h1 className='mb-6 text-2xl  md:text-4xl lg:text-5xl'>
             Call our store and takeaway when it suits you best.
           </h1>
@@ -26,7 +31,7 @@ export const CallStore = () => (
             <a href='tel:+612332333'>Ph. +61 233 2333</a>
           </Button>
         </div>
-        <div className='relative	mx-auto aspect-square max-w-80 md:max-w-xl lg:mx-0 lg:w-6/12'>
+        <div className={cn(CONTAINER_IMG_CLS)}>
           <Image
             fill
             alt='Picture of the author'

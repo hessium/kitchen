@@ -1,14 +1,16 @@
 import Image from 'next/image';
 
+import { CONTAINER_CLS } from '@/shared/constants/classes';
 import { Button } from '@/shared/ui/button/button';
+import { cn } from '@/shared/utils/cn';
 
 import { MainSection } from '@/containers/main-section/main-section';
 
 export const Support = () => (
   <MainSection>
     <div className='bg-primary-50 p-8 md:p-10 xl:p-28'>
-      <div className='mx-auto max-w-screen-2xl items-center text-center lg:flex lg:items-stretch lg:text-left'>
-        <div className='relative mx-auto mb-12 aspect-square max-w-96 lg:mx-0  lg:mb-0 lg:mr-12 lg:w-[calc(50%-1.25rem)] lg:max-w-2xl'>
+      <div className={cn(CONTAINER_CLS, 'lg:text-left')}>
+        <div className='relative mx-auto aspect-square w-full max-w-96 lg:mx-0 lg:w-[calc(50%-1.25rem)] lg:max-w-2xl'>
           <Image
             fill
             alt='Picture of the author'

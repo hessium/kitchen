@@ -2,8 +2,14 @@ import Image from 'next/image';
 
 import { MainSection } from '@/containers/main-section/main-section';
 
+interface List {
+  image: string;
+  name: string;
+  text: string;
+}
+
 export const HowWorks = () => {
-  const worksList = [
+  const worksList: List[] = [
     {
       image: '/images/work-item-1.png',
       name: 'Adapt your menu items',
@@ -30,7 +36,7 @@ export const HowWorks = () => {
           <h2 className='mb-6 text-2xl text-primary md:text-4xl lg:text-5xl'>
             Browse our menu
           </h2>
-          <p className='text-primary-text mb-6'>
+          <p className='mb-6 text-primary-text'>
             Use our menu to place an order online, or phone our store to place a
             pickup order. Fast and fresh food.
           </p>

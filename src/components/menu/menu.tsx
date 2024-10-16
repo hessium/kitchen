@@ -37,7 +37,7 @@ export const Menu = () => {
   return (
     <MainSection>
       <div className='bg-primary-50 p-8 md:p-10 xl:p-28'>
-        <div className='mx-auto flex max-w-screen-2xl flex-col items-center'>
+        <div className='mx-auto max-w-screen-2xl text-center lg:gap-12'>
           <h2 className='mb-6 text-2xl text-primary md:text-4xl lg:text-5xl'>
             How it works.
           </h2>
@@ -61,7 +61,7 @@ export const Menu = () => {
                     <div className='text-xl'>{el.name}</div>
                     <div className='ml-auto text-primary'>$ {el.price} USD</div>
                   </div>
-                  <p className='text-primary-text mb-2 text-sm xl:text-base'>
+                  <p className='mb-2 text-left text-sm text-primary-text xl:text-base'>
                     {el.text}
                   </p>
                   <div className='flex items-stretch'>
