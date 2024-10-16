@@ -6,13 +6,7 @@ import { cn } from '@/shared/utils/cn';
 
 import classes from '@/components/popup/popup.module.css';
 
-export const Popup = ({
-  isOpen,
-  onClose,
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => (
+export const Popup = ({ isOpen, onClose, children }) => (
   <div
     className={cn(isOpen ? classes.active : '', classes.popup)}
     onClick={onClose}
